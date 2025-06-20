@@ -40,7 +40,7 @@ order: 4
 <h2>CTF Achievements</h2>
 
 <ul class="fade-in">
-  <li><strong>Integirty CTF</strong> – 2nd place (BKISC team)</li>
+  <li><strong>Intigriti CTF</strong> – 2nd place (BKISC team)</li>
   <li><strong>Hacktheon Sejong (Qualifiers)</strong> – Top 14 (Chicken Hunter team)</li>
   <li><strong>Hacktheon Sejong (Final Round)</strong> – Finalist in Sejong, Korea (Chicken Hunter team)</li>
 </ul>
