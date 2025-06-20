@@ -125,7 +125,7 @@ comments:
     category_id: DIC_kwDOO-Y6Ac4CrwJK
     mapping: pathname
     strict: 0
-    input_position: top
+    input_position: bottom
     lang: site.lang
     reactions_enabled: 1
     theme: preferred_color_scheme
