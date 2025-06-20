@@ -61,18 +61,19 @@ order: 4
 <h2>Timeline</h2>
 
 <div class="timeline fade-in">
-  <div class="event">
-    <div class="year">2023</div>
-    <div class="desc">Started CTFs and learning security foundations</div>
+<div class="event">
+    <div class="year">2025</div>
+    <div class="desc">Focused on vulnerability research and deep dives</div>
   </div>
   <div class="event">
     <div class="year">2024</div>
     <div class="desc">Wrote technical writeups and joined CTF teams</div>
   </div>
   <div class="event">
-    <div class="year">2025</div>
-    <div class="desc">Focused on vulnerability research and deep dives</div>
+    <div class="year">2023</div>
+    <div class="desc">Started CTFs and learning security foundations</div>
   </div>
+  
 </div>
 
 <hr style="border: none; border-top: 1px solid #ccc;">
