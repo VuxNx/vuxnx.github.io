@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 4
+order: 5
 ---
 
 <section style="line-height: 1.8; max-width: 760px; margin: auto; font-family: sans-serif; padding: 2rem 1rem;">
@@ -37,13 +37,46 @@ order: 4
 
 <hr style="border: none; border-top: 1px solid #ccc;">
 
-<h2>CTF Achievements</h2>
+<!-- <h2>CTF Achievements</h2>
 
 <ul class="fade-in">
-  <li><strong>Intigriti CTF</strong> – 2nd place (BKISC team)</li>
-  <li><strong>Hacktheon Sejong (Qualifiers)</strong> – Top 14 (Chicken Hunter team)</li>
-  <li><strong>Hacktheon Sejong (Final Round)</strong> – Finalist in Sejong, Korea (Chicken Hunter team)</li>
-</ul>
+  <li><strong>Intigriti CTF</strong> – 2nd Place (BKISC Team)</li>
+  <li><strong>Hacktheon Sejong – Qualifiers</strong> – Top 14 out of all teams (Chicken Hunter Team)</li>
+  <li><strong>GPN CTF 2025</strong> – Top 7 out of 1,064 teams (BKISC Team)</li>
+  <li><strong>Hacktheon Sejong – Final Round</strong> – Finalist, Sejong, South Korea (Chicken Hunter Team)</li>
+</ul> -->
+<h2>CTF Achievements</h2>
+
+<div class="ctf-grid fade-in">
+  <div class="ctf-card">
+    <span class="ctf-icon">🥈</span>
+    <div>
+      <strong>Intigriti CTF</strong><br>
+      2nd Place – BKISC Team
+    </div>
+  </div>
+  <div class="ctf-card">
+    <span class="ctf-icon">🎯</span>
+    <div>
+      <strong>Hacktheon Sejong – Qualifiers</strong><br>
+      Top 14 – Chicken Hunter Team
+    </div>
+  </div>
+  <div class="ctf-card">
+    <span class="ctf-icon">🏅</span>
+    <div>
+      <strong>GPN CTF 2025</strong><br>
+      Top 7 out of 1,064 teams – BKISC Team
+    </div>
+  </div>
+  <div class="ctf-card">
+    <span class="ctf-icon">🇰🇷</span>
+    <div>
+      <strong>Hacktheon Sejong – Final Round</strong><br>
+      Finalist – Sejong, Korea (Chicken Hunter Team)
+    </div>
+  </div>
+</div>
 
 <hr style="border: none; border-top: 1px solid #ccc;">
 
@@ -84,6 +117,8 @@ order: 4
   <li>Email: <a href="mailto:trongnghiavu649@gmail.com">trongnghiavu649@gmail.com</a></li>
   <li>GitHub: <a href="https://github.com/VuxNx" target="_blank">github.com/VuxNx</a></li>
 </ul>
+
+<hr style="border: none; border-top: 1px solid #ccc;">
 
 <p style="margin-top: 3rem; font-style: italic; color: var(--text-secondary); text-align: center;" class="fade-in">
   “The hacker mindset doesn't actually see what happens on the other side, to the victim.” <br>- Kevin Mitnick
@@ -133,6 +168,35 @@ hr {
   opacity: 1;
   transform: none;
 }
+
+.ctf-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.ctf-card {
+  display: flex;
+  align-items: flex-start;
+  background: rgba(0, 0, 0, 0.02);
+  padding: 1rem 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+  gap: 0.75rem;
+}
+
+.ctf-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.ctf-icon {
+  font-size: 1.4rem;
+  margin-top: 0.1rem;
+}
+
 </style>
 
 <script>

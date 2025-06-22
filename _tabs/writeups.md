@@ -1,7 +1,7 @@
 ---
 title: Writeups
 icon: fas fa-flag
-order: 5
+order: 4
 ---
 
 <div class="writeups-list">
