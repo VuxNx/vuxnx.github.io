@@ -519,7 +519,7 @@ After, run script, we got the ```ACCESS_PASS```. So now, the end is yours 🦥.
 
 In this solution, we already know that we can exploit **CVE-2023-0835** to read arbitrary files. However, the challenge is that the sanitizeHtml function only allows the ```<a>``` tag and the ```style``` attribute in the input. So, is there a way to bypass the automatic tag-stripping mechanism? (In this case, we don’t actually need the tags to be valid HTML — we just need them to remain intact as text before they are passed into the generatePDF function, where the exploit takes place.)
 
-At this point, we can take advantage of how browsers render escaped characters. For example, < and > can be encoded as ```&lt```; and ```&gt```;, so something like ```&lt;img src=#&gt;``` won’t be filtered by sanitize-html (since it treats it as normal text and doesn’t remove it), but when rendered, it will become ```<img src=#>```. From here, we can craft the payload:
+At this point, we can take advantage of how browsers render escaped characters. For example, < and > can be encoded as ```&lt;``` and ```&gt;```, so something like ```&lt;img src=#&gt;``` won’t be filtered by sanitize-html (since it treats it as normal text and doesn’t remove it), but when rendered, it will become ```<img src=#>```. From here, we can craft the payload:
 ```html
 &lt;script&gt;
     document.write(window.location);
