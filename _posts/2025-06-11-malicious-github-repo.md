@@ -640,6 +640,7 @@ const runP = () => {
 Based on what I can tell, this seems to be the part where the code patches itself into malware. But here’s what’s bothering me: it refers to ```p.zi``` — yet when it makes a request to that endpoint, the actual file is named ```p.zip```.
 
 Could this be a typo?
+
 Update (12/06/2025): All of my previous assumptions were completely wrong. This isn’t where the malware is patched — it’s actually where they download the Python environment to the victim’s machine (quite meticulous, actually). This is a preparation step for executing the ```.py``` payload later on — probably because they couldn’t be sure whether a Node.js developer would already have Python installed.
 ![{29876A88-0AB3-40C1-BAFE-91673BEC625C}](https://hackmd.io/_uploads/SJUuKPdXle.png)
 
