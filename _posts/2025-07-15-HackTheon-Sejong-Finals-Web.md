@@ -468,7 +468,7 @@ Jinja's sandbox does catch calls to str.format and ensures they don't escape the
 
 Follow this [Github commit](https://github.com/pallets/jinja/commit/90457bbf33b8662926ae65cdde4c4c32e756e403), we get:
 
-![Screenshot](assets\\img\\writeups\\sejong\\{28EC1E75-9055-460A-81E6-BCB42C1097F6}.png)
+![Screenshot](assets/img/writeups/sejong/commit.png)
 
 I'll explain the testcase used in this commit:
 
