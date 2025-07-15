@@ -8,7 +8,7 @@ comments: true
 
 ## Overview
 
-This write-up is for two white-box web challenges from the finals of Hacktheon Sejong 2025: **Shop Prototype** and **Blog**. Here is the link to [source code of them](placeholder).   I'll go through each of them in detail, one by one. So now, let's start with **Shop Prototype**
+This write-up is for two white-box web challenges from the finals of Hacktheon Sejong 2025: **Shop Prototype** and **Blog**. Here is the link to [source code of them](https://github.com/VuxNx/Hacktheon_Sejong_2025_Final).   I'll go through each of them in detail, one by one. So now, let's start with **Shop Prototype**
 
 ## Shop Prototype
 
