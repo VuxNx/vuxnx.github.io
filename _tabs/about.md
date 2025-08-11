@@ -76,6 +76,13 @@ order: 5
       Finalist – Sejong, Korea (Chicken Hunter Team)
     </div>
   </div>
+  <div class="ctf-card">
+    <span class="ctf-icon">🏅</span>
+    <div>
+      <strong>HCMUS-CTF Finals</strong><br>
+      Top 7 (Jitenshas Team)
+    </div>
+  </div>
 </div>
 
 <hr style="border: none; border-top: 1px solid #ccc;">
