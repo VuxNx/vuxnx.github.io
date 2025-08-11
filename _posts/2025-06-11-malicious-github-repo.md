@@ -2,7 +2,7 @@
 title: "Writeup: Malicious Gitlab Repository"
 date: 2025-06-11
 categories: [writeups]
-tags: [malware, miscs]
+tags: [malware, misc]
 comments: true
 ---
 
