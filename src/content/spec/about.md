@@ -70,6 +70,13 @@
       Top 7 (Jitenshas Team)
     </div>
   </div>
+  <div class="ctf-card">
+    <span class="ctf-icon">🥈</span>
+    <div>
+      <strong>HDBank Hackathon CyberSecurity Track Finals</strong><br>
+      Top 2 (0v3rc1ock Team)
+    </div>
+  </div>
 </div>
 
 ---
