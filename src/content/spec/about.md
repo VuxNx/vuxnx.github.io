@@ -77,6 +77,13 @@
       Top 2 (0v3rc1ock Team)
     </div>
   </div>
+  <div class="ctf-card">
+    <span class="ctf-icon">🥈</span>
+    <div>
+      <strong>International Standoff 16 Cyberbattle Finals</strong><br>
+      Top 10 (BKISC Team)
+    </div>
+  </div>
 </div>
 
 ---
