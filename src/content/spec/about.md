@@ -36,13 +36,6 @@
 
 <div class="ctf-grid fade-in">
   <div class="ctf-card">
-    <span class="ctf-icon">🥈</span>
-    <div>
-      <strong>Intigriti CTF</strong><br>
-      2nd Place – BKISC Team
-    </div>
-  </div>
-  <div class="ctf-card">
     <span class="ctf-icon">🏅</span>
     <div>
       <strong>Hacktheon Sejong – Qualifiers</strong><br>
