@@ -71,10 +71,17 @@
     </div>
   </div>
   <div class="ctf-card">
-    <span class="ctf-icon">🥈</span>
+    <span class="ctf-icon">🏅</span>
     <div>
       <strong>International Standoff 16 Cyberbattle Finals</strong><br>
       Top 10 (BKISC Team)
+    </div>
+  </div>
+  <div class="ctf-card">
+    <span class="ctf-icon">🥉</span>
+    <div>
+      <strong>VSL CTF 2026</strong><br>
+      Top 3 (Ranga.exe Team)
     </div>
   </div>
 </div>
